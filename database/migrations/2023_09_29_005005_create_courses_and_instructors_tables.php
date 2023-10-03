@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->timestamps();
         });
-        
+
         Schema::create('instructors', function (Blueprint $table) {
             $table->id();
             $table->string('name');
@@ -28,7 +28,7 @@ return new class extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * Reverse the migrations. 
      */
     public function down(): void
     {
